@@ -20,6 +20,14 @@ Então, vamos ao teste!
     ```bash
     POST http://localhost:8080/api/products/{id}/price
     ```
+
+- Body
+    ```
+    {
+        qty: 10
+    }
+    ```
+
 - JSON de Produtos
     ```json
     {
