@@ -75,7 +75,7 @@ Então, vamos ao teste!
     `400 (Requisição inválida)` | `Ocorreu um erro desconhecido`
     `412 (Pré-condição falhou)` | `Os valores informados não são válidos.`
 
-
+### Informações relevantes
 - O produto possui 3 atributos básicos relacionados a preço: preço regular, preço promocional e preços por quantidade.
 - O preço promocional pode ter período de validade (data de ínicio e data de término)
 - O produto pode ter mais de um preço por quantidade. 
