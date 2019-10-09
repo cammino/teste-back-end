@@ -68,6 +68,7 @@ Então, vamos ao teste!
     ```
 
 - Retornos
+
     Código | Resposta
     ------------ | -------------
     `201 (Sucesso)` | `Operação realizada com sucesso` 
