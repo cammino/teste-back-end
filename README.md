@@ -79,7 +79,7 @@ Então, vamos ao teste!
 
     ```json
     {
-        price: 50.00
+        "price": 50.00
     }
     ```
 
