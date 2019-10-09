@@ -14,7 +14,7 @@ Então, vamos ao teste!
 
 ### O Desafio
 
-- Você deverá criar uma API REST para simular o cálculo de preço de produtos.
+- Você deverá criar uma API REST em PHP para simular o cálculo de preço de produtos.
 
 - Request
     ```bash
