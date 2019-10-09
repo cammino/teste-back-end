@@ -28,7 +28,7 @@ Então, vamos ao teste!
     }
     ```
 
-- JSON de Produtos
+- Base de dados de Produtos
     ```json
     {
         "products": [
@@ -77,9 +77,15 @@ Então, vamos ao teste!
 
 - Retornos
 
+    ```json
+    {
+        price: 50.00
+    }
+    ```
+
     Código | Resposta
     ------------ | -------------
-    `201 (Sucesso)` | `JSON de resposta` 
+    `201 (Sucesso)` | `Preço do produto` 
     `400 (Requisição inválida)` | `Ocorreu um erro desconhecido`
     `412 (Pré-condição falhou)` | `Os valores informados não são válidos.`
 
