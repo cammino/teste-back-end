@@ -20,7 +20,7 @@ Então, vamos ao teste!
     ```bash
     POST http://localhost:8080/api/products/{id}/price
     ```
-- Body
+- JSON de Produtos
     ```json
     {
         "products": [
@@ -80,7 +80,7 @@ Então, vamos ao teste!
 - O preço promocional pode ter período de validade (data de ínicio e data de término)
 - O produto pode ter mais de um preço por quantidade. 
 - O valor retornado pela requisição deverá ser o menor preço válido.
-- Caso o preço especial seja menor que o preço pela quantidade requisitada, deverá ser retornado o preço promocional.
+- Caso o preço especial seja menor que o preço da quantidade requisitada, deverá ser retornado o preço promocional.
 
 ### O que será avaliado?
 - Padrões de classe, atributos e métodos
@@ -96,7 +96,7 @@ Então, vamos ao teste!
 
 Iniciou o desenvolvimento da solução, mas por algum motivo, acabou esbarrando em algo? Nós sabemos, às vezes acontece...
 
-E é por isso que, caso você não tenha concluído o teste por algum motivo, sinta-se confortável para, mesmo assim, nos enviar o que foi feito. Iremos avaliar seu código para entendermos o que pode ter acontecido e consideraremos o mesmo, ok?
+E é por isso que, caso você não tenha concluído o teste por algum motivo, sinta-se confortável para mesmo assim, nos enviar o que foi feito. Iremos avaliar seu código para entendermos o que pode ter acontecido e consideraremos mesmo assim, ok?
 
 Então, bora codar?
 
