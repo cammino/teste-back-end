@@ -75,11 +75,12 @@ Então, vamos ao teste!
     `400 (Requisição inválida)` | `Ocorreu um erro desconhecido`
     `412 (Pré-condição falhou)` | `Os valores informados não são válidos.`
 
-- - O produto possui 3 atributos básicos relacionados a preço: preço regular, preço promocional e preços por quantidade.
-- - O preço promocional pode ter período de validade (data de ínicio e data de término)
-- - O produto pode ter mais de um preço por quantidade. 
-- - O valor retornado pela requisição deverá ser o menor preço válido.
-- - Caso o preço especial seja menor que o preço pela quantidade requisitada, deverá ser retornado o preço promocional.
+
+- O produto possui 3 atributos básicos relacionados a preço: preço regular, preço promocional e preços por quantidade.
+- O preço promocional pode ter período de validade (data de ínicio e data de término)
+- O produto pode ter mais de um preço por quantidade. 
+- O valor retornado pela requisição deverá ser o menor preço válido.
+- Caso o preço especial seja menor que o preço pela quantidade requisitada, deverá ser retornado o preço promocional.
 
 ### O que será avaliado?
 - Padrões de classe, atributos e métodos
