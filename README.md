@@ -84,7 +84,7 @@ Então, vamos ao teste!
 - Padrões de classe, atributos e métodos
 - Organização e qualidade do código
 - Conhecimento da linguagem, orientação a objetos
-- Semântica
+- Semântica 
 
 ### O que nos impressionaria
 - Alguma metodologia para definição e organização do seu código.
