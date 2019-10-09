@@ -16,7 +16,7 @@ Então, vamos ao teste!
 
 Você deverá criar uma página que exibirá o resultado de uma lógica de cálculo do preço de um determinado produto. 
 
-- A página deverá conter um resultado visual (formato de grid) com 1 item simulando um produto.
+- A página deverá conter um resultado visual (fica a seu critério como será exibido em tela) com 1 item simulando um produto.
 - Deverá também contar alguns inputs que serão os responsáveis por realizar o disparo para calcular o preço final do produto, sendo eles:
     - Preço base/regular
     - Preço promocional
