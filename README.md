@@ -14,21 +14,71 @@ Então, vamos ao teste!
 
 ### O Desafio
 
-Você deverá criar uma página que exibirá o resultado de uma lógica de cálculo do preço de um determinado produto. 
+- Você deverá criar uma API REST para simular o cálculo de preço de produtos.
 
-- A página deverá conter um resultado visual (fica a seu critério como será exibido em tela) com 1 item simulando um produto.
-- Deverá também contar alguns inputs que serão os responsáveis por realizar o disparo para calcular o preço final do produto, sendo eles:
-    - Preço base/regular
-    - Preço promocional
-    - Período em que o preço promocional
-    - Preço por quantidade
+- Request
+    ```bash
+    POST http://localhost:8080/api/products/{id}/price
+    ```
+- Body
+    ```json
+    {
+        products: [
+            {
+                id: 1,
+                name: 'PHP for experts',
+                regular_price: 50.90,
+                special_price: 45.90,
+                sprecial_price_from: '2019-01-01',
+                sprecial_price_tro: '2019-01-31',
+                tier_prices: [
+                    { qty: 3, price: 40.95 },
+                    { qty: 5, price: 35.89 },
+                    { qty: 10, price: 30.25 }
+                ]
+            },
+            {
+                id: 2,
+                name: 'TDD using PHP',
+                regular_price: 80.95,
+                special_price: 75.90,
+                sprecial_price_from: '2019-01-01',
+                sprecial_price_tro: '2019-01-31',
+                tier_prices: [
+                    { qty: 3, price: 70.25 },
+                    { qty: 5, price: 65.90 },
+                    { qty: 10, price: 60.85 }
+                ]
+            },
+            {
+                id: 3,
+                name: 'Learning Magento',
+                regular_price: 80.95,
+                special_price: 75.90,
+                sprecial_price_from: '2019-01-01',
+                sprecial_price_tro: '2019-01-31',
+                tier_prices: [
+                    { qty: 3, price: 70.25 },
+                    { qty: 5, price: 65.90 },
+                    { qty: 10, price: 60.85 }
+                ]
+            }
+        ]
+    }
+    ```
 
-### Espera-se que tudo funcione da seguinte forma:
+- Retornos
+    Código | Resposta
+    ------------ | -------------
+    `201 (Sucesso)` | `Operação realizada com sucesso` 
+    `400 (Requisição inválida)` | `Ocorreu um erro desconhecido`
+    `412 (Pré-condição falhou)` | `Os valores informados não são válidos.`
 
-- Ao acessar a página o VISITANTE irá visualizar o item/produto com o valor zerado.
-- O usuário poderá preencher todos os inputs disponíveis na página citados anteriormente.
-- Conforme o usuário preenche os campos, o preço do produto é atualizado dinamicamente e exibido para o VISITANTE.
-- No final, espera-se que seja possível realizar o cálculo do preço final com base em todas as opções disponíveis.
+- - O produto possui 3 atributos básicos relacionados a preço: preço regular, preço promocional e preços por quantidade.
+- - O preço promocional pode ter período de validade (data de ínicio e data de término)
+- - O produto pode ter mais de um preço por quantidade. 
+- - O valor retornado pela requisição deverá ser o menor preço válido.
+- - Caso o preço especial seja menor que o preço pela quantidade requisitada, deverá ser retornado o preço promocional.
 
 ### O que será avaliado?
 - Padrões de classe, atributos e métodos
@@ -36,7 +86,17 @@ Você deverá criar uma página que exibirá o resultado de uma lógica de cálc
 - Conhecimento da linguagem, orientação a objetos
 - Semântica
 
-- Testes automatizados ( caso seja realizado testes na aplicação, será um grande plus para nós :) ).
+### O que nos impressionaria
+- Alguma metodologia para definição e organização do seu código.
+- Testes automatizados ( será um grande plus para nós :) ).
+
+### Dificuldades? Não desanime, nós te entendemos!
+
+Iniciou o desenvolvimento da solução, mas por algum motivo, acabou esbarrando em algo? Nós sabemos, às vezes acontece...
+
+E é por isso que, caso você não tenha concluído o teste por algum motivo, sinta-se confortável para, mesmo assim, nos enviar o que foi feito. Iremos avaliar seu código para entendermos o que pode ter acontecido e consideraremos o mesmo, ok?
+
+Então, bora codar?
 
 ### Conclusão e apresentação
 
