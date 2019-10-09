@@ -79,7 +79,7 @@ Então, vamos ao teste!
 
     Código | Resposta
     ------------ | -------------
-    `201 (Sucesso)` | `Operação realizada com sucesso` 
+    `201 (Sucesso)` | `JSON de resposta` 
     `400 (Requisição inválida)` | `Ocorreu um erro desconhecido`
     `412 (Pré-condição falhou)` | `Os valores informados não são válidos.`
 
