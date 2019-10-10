@@ -1,6 +1,4 @@
 <?php
-
-include_once "TierPrices.php";
 include_once "Produto.php";
 
 $str = file_get_contents('produtos.json');
