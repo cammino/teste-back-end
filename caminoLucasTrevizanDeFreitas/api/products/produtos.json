@@ -1,0 +1,43 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "PHP for experts",
+            "regular_price": 50.90,
+            "special_price": 45.90,
+            "sprecial_price_from": "2019-01-01",
+            "sprecial_price_tro": "2019-01-31",
+            "tier_prices": [
+                { "qty": 3, "price": 40.95 },
+                { "qty": 5, "price": 35.89 },
+                { "qty": 10, "price": 30.25 }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "TDD using PHP",
+            "regular_price": 80.95,
+            "special_price": 75.90,
+            "sprecial_price_from": "2019-01-01",
+            "sprecial_price_tro": "2019-01-31",
+            "tier_prices": [
+                { "qty": 3, "price": 70.25 },
+                { "qty": 5, "price": 65.90 },
+                { "qty": 10, "price": 60.85 }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Learning Magento",
+            "regular_price": 80.95,
+            "special_price": 75.90,
+            "sprecial_price_from": "2019-01-01",
+            "sprecial_price_tro": "2019-01-31",
+            "tier_prices": [
+                { "qty": 3, "price": 70.25 },
+                { "qty": 5, "price": 65.90 },
+                { "qty": 10, "price": 60.85 }
+            ]
+        }
+    ]
+}
