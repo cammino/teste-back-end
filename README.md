@@ -1,12 +1,12 @@
 # Sobre a Cammino Digital
 
+Olá Dev! Tudo bem?
+
 Somos a Cammino Digital, um grupo de pessoas que se dedicam ao universo do E-commerce. Com o propósito de pensar, agir e se relacionar com todos os processos que envolvem um projeto digital é que, em 2006, dois sonhadores fundaram a Cammino. 
 
 Hoje somos uma empresa especializada em e-commerce, que acredita em dados, técnicas, insights e pessoas para entregar serviços estratégicos que trazem mais resultados aos clientes.
 
 # Teste de Back-end
-
-Olá Dev! Tudo bem?
 
 Este teste busca avaliar quesitos técnicos para os devs que se candidatem às vagas de desenvolvimento back-end da Cammino Digital.
 
@@ -15,6 +15,8 @@ Então, vamos ao teste!
 ### O Desafio
 
 - Você deverá criar uma API REST em PHP para simular o cálculo de preço de produtos.
+
+### Específicações da API
 
 - Request
     ```bash
@@ -27,55 +29,8 @@ Então, vamos ao teste!
         qty: 10
     }
     ```
-
-- Base de dados de Produtos
-    ```json
-    {
-        "products": [
-            {
-                "id": 1,
-                "name": "PHP for experts",
-                "regular_price": 50.90,
-                "special_price": 45.90,
-                "sprecial_price_from": "2019-01-01",
-                "sprecial_price_tro": "2019-01-31",
-                "tier_prices": [
-                    { "qty": 3, "price": 40.95 },
-                    { "qty": 5, "price": 35.89 },
-                    { "qty": 10, "price": 30.25 }
-                ]
-            },
-            {
-                "id": 2,
-                "name": "TDD using PHP",
-                "regular_price": 80.95,
-                "special_price": 75.90,
-                "sprecial_price_from": "2019-01-01",
-                "sprecial_price_tro": "2019-01-31",
-                "tier_prices": [
-                    { "qty": 3, "price": 70.25 },
-                    { "qty": 5, "price": 65.90 },
-                    { "qty": 10, "price": 60.85 }
-                ]
-            },
-            {
-                "id": 3,
-                "name": "Learning Magento",
-                "regular_price": 80.95,
-                "special_price": 75.90,
-                "sprecial_price_from": "2019-01-01",
-                "sprecial_price_tro": "2019-01-31",
-                "tier_prices": [
-                    { "qty": 3, "price": 70.25 },
-                    { "qty": 5, "price": 65.90 },
-                    { "qty": 10, "price": 60.85 }
-                ]
-            }
-        ]
-    }
-    ```
-
-- Retornos
+    
+- Retorno
 
     ```json
     {
@@ -88,6 +43,53 @@ Então, vamos ao teste!
     `201 (Sucesso)` | `Preço do produto` 
     `400 (Requisição inválida)` | `Ocorreu um erro desconhecido`
     `412 (Pré-condição falhou)` | `Os valores informados não são válidos.`
+    
+- Base de dados de Produtos
+    ```json
+    {
+        "products": [
+            {
+                "id": 1,
+                "name": "PHP for experts",
+                "regular_price": 50.90,
+                "special_price": 45.90,
+                "special_price_from": "2019-01-01",
+                "special_price_to": "2019-01-31",
+                "tier_prices": [
+                    { "qty": 3, "price": 40.95 },
+                    { "qty": 5, "price": 35.89 },
+                    { "qty": 10, "price": 30.25 }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "TDD using PHP",
+                "regular_price": 80.95,
+                "special_price": 75.90,
+                "special_price_from": "2019-01-01",
+                "special_price_to": "2019-01-31",
+                "tier_prices": [
+                    { "qty": 3, "price": 70.25 },
+                    { "qty": 5, "price": 65.90 },
+                    { "qty": 10, "price": 60.85 }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Learning Magento",
+                "regular_price": 80.95,
+                "special_price": 75.90,
+                "special_price_from": "2019-01-01",
+                "special_price_to": "2019-01-31",
+                "tier_prices": [
+                    { "qty": 3, "price": 70.25 },
+                    { "qty": 5, "price": 65.90 },
+                    { "qty": 10, "price": 60.85 }
+                ]
+            }
+        ]
+    }
+    ``` 
 
 ### Informações relevantes
 - O produto possui 3 atributos básicos relacionados a preço: preço regular, preço promocional e preços por quantidade.
@@ -97,13 +99,12 @@ Então, vamos ao teste!
 - Caso o preço especial seja menor que o preço da quantidade requisitada, deverá ser retornado o preço promocional.
 
 ### O que será avaliado?
-- Padrões de classe, atributos e métodos
 - Organização e qualidade do código
-- Conhecimento da linguagem, orientação a objetos
-- Semântica 
+- Conhecimento da linguagem
+- Orientação a objetos e MVC
 
 ### O que nos impressionaria
-- Alguma metodologia para definição e organização do seu código.
+- Princípios e boas práticas de desenvolvimento (SOLID, KISS, DRY, Clean Code, etc).
 - Testes automatizados ( será um grande plus para nós :) ).
 
 ### Dificuldades? Não desanime, nós te entendemos!
